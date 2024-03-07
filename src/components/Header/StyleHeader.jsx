@@ -2,27 +2,33 @@ import styled from "styled-components"
 
 export const HeaderStyle = styled.header`
     background-color: #EDD820;
-    height: 20vh;
+    height: 18vh;
     display: flex; 
     align-items: center;
-    border: solid green;
-`
+    justify-content: space-evenly;
+ `
 export const ImgStyle = styled.img`
-    height: 10vh;
+    height: 8vh;
 `
 export const SectionStyle = styled.section`
     display: flex;
-    align-items: end;
-    justify-content: end;
-    border: solid purple;
+    justify-content: flex-end;
     width: 70vw;  
 `
 export const DivStyle = styled.div`
-   
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   width: 12vw;
 `
 export const ImgStyle1 = styled.img`
-    height: 10vh;
+    height: 8vh;
+    width: 5vw;
 `
 export const ImgStyle2 = styled.img`
-    height: 10vh;
+    height: 8vh;
+    width: 5vw;
+`
+export const H2Style = styled.h2`
+    font-size: 1rem;
 `
