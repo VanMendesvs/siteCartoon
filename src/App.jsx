@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "./components/Header/Header.jsx"
 import Main from "./components/Main/Main.jsx"
+import Footer from "./components/Footer/Footer.jsx"
 import {createGlobalStyle} from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
@@ -15,6 +16,7 @@ function App() {
 <>
 <Header />
 <Main />
+<Footer/>
 <GlobalStyle />
 </>
   )

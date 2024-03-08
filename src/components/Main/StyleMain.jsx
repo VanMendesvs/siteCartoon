@@ -6,7 +6,7 @@ export const MainStyle = styled.main`
 
 export const DivStyle = styled.div`
     background-color: #211921;
-    height: 25vh;
+    height: 30vh;
     width: 100vw;
     display: flex;
     align-items: center;
@@ -19,7 +19,7 @@ export const ImgStyle = styled.img`
 
 export const DivStyle1 = styled.div`
     background-color: #EDD820;
-    height: 25vh;
+    height: 30vh;
     width: 100vw;
     display: flex;
     justify-content: space-around;

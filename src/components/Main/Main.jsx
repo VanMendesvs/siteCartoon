@@ -26,6 +26,5 @@ function Main() {
         </S.MainStyle>
     )
 }
-
 export default Main
 

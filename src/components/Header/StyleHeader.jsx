@@ -22,11 +22,11 @@ export const DivStyle = styled.div`
    width: 12vw;
 `
 export const ImgStyle1 = styled.img`
-    height: 8vh;
+    height: 9vh;
     width: 5vw;
 `
 export const ImgStyle2 = styled.img`
-    height: 8vh;
+    height: 9vh;
     width: 5vw;
 `
 export const H2Style = styled.h2`
