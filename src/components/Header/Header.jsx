@@ -8,17 +8,18 @@ import * as S from "./StyleHeader.jsx"
 function Header() {
     return (
         <S.HeaderStyle>
-            <S.ImgStyle src={Logo} alt="Imagem Logotipo Cartonn Network" />
-            <S.SectionStyle>
-                <S.DivStyle>
-                    <S.ImgStyle1 src={Joystick} alt="Imagem do Joytick" />
-                    <S.H2Style>JOGOS</S.H2Style>
-                </S.DivStyle>
-                <S.DivStyle>
-                    <S.ImgStyle2 src={Programa} alt="Imagem de Relogio" />
-                    <S.H2Style>PROGRAMAÇÃO</S.H2Style>
-                </S.DivStyle>
-            </S.SectionStyle>
+            <img src={Logo} alt="Imagem Logotipo Cartonn Network" />
+            <S.Section>
+                <S.Div>
+                    <S.Img src={Joystick} alt="Imagem do Joytick" />
+                    <S.H2>JOGOS</S.H2>
+                </S.Div>
+
+                <S.Div>
+                    <S.Img src={Programa} alt="Imagem de Relogio" />
+                    <S.H2>PROGRAMAÇÃO</S.H2>
+                </S.Div>
+            </S.Section>
 
         </S.HeaderStyle>
     )
