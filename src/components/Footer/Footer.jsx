@@ -8,18 +8,20 @@ import * as S from "./StyleFooter"
 function Footer(){
     return(
         <S.FooterStyle>
-            <S.SectionStyle>
-                <S.ImgStyle src={Warner} alt="Logo WarnerBross"/>
+            <section>
                 <S.DivStyle>
-                <S.H2Style>Sobre nós</S.H2Style>
-                <S.H2Style>Produtos</S.H2Style>
-                <S.H2Style>Personagem</S.H2Style>
+                    <S.ImgStyle src={Warner} alt="Logo WarnerBross"/>
+                    <S.H2Style>Sobre nós</S.H2Style>
+                    <S.H2Style>Produtos</S.H2Style>
+                       <S.H2Style>Personagem</S.H2Style>
+                        <img src={Git} alt="Icone do GitHub"/>
+                        <img src={Linkedin} alt="Icone do Linkedin"/>
                 </S.DivStyle>
                 <S.DivStyle1>
-                    <img src={Git} alt="Icone do GitHub"/>
-                    <img src={Linkedin} alt="Icone do Linkedin"/>
+                    <h2>© 2024 Cartoon Network</h2>
                 </S.DivStyle1>
-            </S.SectionStyle>
+                
+            </section>
         </S.FooterStyle>
     )
 }
