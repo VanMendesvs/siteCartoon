@@ -1,9 +1,6 @@
 import styled from "styled-components"
 
-export const MainStyle = styled.main`
-    display: flex;
-`
-export const DivStyle = styled.div`
+export const SectionStyle1 = styled.section`
     background-color: #211921;
     height: 30vh;
     width: 100vw;
@@ -15,11 +12,11 @@ export const ImgStyle = styled.img`
     width: 20vw;
     height: 20vh;
 `
-export const DivStyle1 = styled.div`
+export const SectionStyle2 = styled.section`
     background-color: #EDD820;
     height: 30vh;
     width: 100vw;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
 `
