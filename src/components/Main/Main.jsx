@@ -10,7 +10,6 @@ import TJ from "./ImgMain/tomejerry.png"
 
 
 import * as S from "./StyleMain.jsx"
-
 import Programacao from "../Programacao/Programacao.jsx";
 
 
