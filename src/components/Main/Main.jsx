@@ -11,6 +11,8 @@ import TJ from "./ImgMain/tomejerry.png"
 
 import * as S from "./StyleMain.jsx"
 
+import Programacao from "../Programacao/Programacao.jsx";
+
 
 function Main() {
     const [galeria, setGaleria] = useState([
@@ -31,6 +33,7 @@ function Main() {
                    ))}
             </S.SectionStyle2>   
            
+                <Programacao/>
         </main>
     )
 }
