@@ -13,18 +13,22 @@ import * as S from "./StyleProgramacao.jsx"
 function Programacao(){
 
     const [desenhos, setDesenhos] = useState([
-        {nome: "O laboratorio de Dexter", hora: "7:00", imagem: Dexter},
-        {nome: "A vaca e o frango", hora: "8:00", imagem: Vaca},
-        {nome: "Du, Dudu e Edu", hora: "9:00", imagem: Du},
-        {nome: "Coragem, o cão Covarde", hora: "10:00", imagem: Coragem},
-        {nome: "Irmão do Jorel", hora: "11:00", imagem: Jorel},
-        {nome: "Turma da Monica Jovem", hora: "12:00", imagem: Monica},
-        {nome: "Steven Universo", hora: "13:00", imagem: Steven},
-        {nome: "Billy e Mandy", hora: "14:00", imagem: Billy}
+        {nome: "O laboratorio de Dexter", hora: "7:00", imagem: Dexter, desenhoManha: true},
+        {nome: "A vaca e o frango", hora: "8:00", imagem: Vaca, desenhoManha: true},
+        {nome: "Du, Dudu e Edu", hora: "9:00", imagem: Du, desenhoManha: true},
+        {nome: "Coragem, o cão Covarde", hora: "10:00", imagem: Coragem, desenhoManha: true},
+        {nome: "Irmão do Jorel", hora: "11:00", imagem: Jorel, desenhoManha: true},
+        {nome: "Turma da Monica Jovem", hora: "12:00", imagem: Monica, desenhoManha: false},
+        {nome: "Steven Universo", hora: "13:00", imagem: Steven, desenhoManha: false},
+        {nome: "Billy e Mandy", hora: "14:00", imagem: Billy, desenhoManha: false}
         ])
 
+        const desenhoCedo = desenhos.filter((item) => item.desenhoManha === true)
+
+
     return(
-        <S.Section>
+        <section>
+        <S.SectionMap>
             {desenhos.map((item) =>(
                 <S.Div>
                     <S.H2>{item.hora}</S.H2>
@@ -32,7 +36,19 @@ function Programacao(){
                     <img src={item.imagem} alt={item.nome}/>
                 </S.Div>
             ))}
-        </S.Section>
+        </S.SectionMap>
+        <S.SectionFilter>
+
+                {desenhoCedo.map((item)=>(
+                    <div>
+                        <h3>{item.hora}</h3>
+                        <h3>{item.nome}</h3>
+                        <img src={item.imagem} alt={item.nome}/>
+                    </div>
+                ))}
+
+        </S.SectionFilter>
+        </section>
     )
 }
 

@@ -1,6 +1,6 @@
 import styled from "styled-components"
 
-export const Section = styled.section`
+export const SectionMap = styled.section`
     background-color: #464646;
     display: flex;
     justify-content: space-evenly;
@@ -19,4 +19,9 @@ export const Div = styled.div`
 export const H2 = styled.h2`
     font-weight: 200;
     font-size: 1.5rem   ;
+`
+
+export const SectionFilter = styled.section`
+
+
 `
